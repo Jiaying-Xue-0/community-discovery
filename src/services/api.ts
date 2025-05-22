@@ -4,12 +4,28 @@ import { Post } from '../types';
 const dataFormats = {
   format1: {
     getImageUrl: (id: string) => `https://picsum.photos/400/300?random=${id}`,
-    getVideoUrl: (id: string) => `https://example.com/video${id}.mp4`,
+    getVideoUrl: (id: string) => {
+      const videos = [
+        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4'
+      ];
+      return videos[parseInt(id) % videos.length];
+    },
     getThumbnail: (id: string) => `https://picsum.photos/200/200?random=${id}`,
   },
   format2: {
     getImageUrl: (id: string) => `https://source.unsplash.com/random/400x300?sig=${id}`,
-    getVideoUrl: (id: string) => `https://example.com/video${id}.webm`,
+    getVideoUrl: (id: string) => {
+      const videos = [
+        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4'
+      ];
+      return videos[parseInt(id) % videos.length];
+    },
     getThumbnail: (id: string) => `https://source.unsplash.com/random/200x200?sig=${id}`,
   }
 };
