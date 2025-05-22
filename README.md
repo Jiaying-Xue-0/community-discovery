@@ -4,7 +4,7 @@
 
 ## 演示视频
 
-[查看功能演示视频](https://www.loom.com/share/3ecf5f5cfd3048baa45dfdcca048b9d6)
+[查看功能演示视频](https://www.loom.com/share/781c13d386534ba69468ad1f344e9d0f)
 
 ## 主要功能
 
