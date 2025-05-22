@@ -2,9 +2,13 @@
 
 一个基于 React + TypeScript 实现的社区发现页面，具有类似小红书的瀑布流布局和无限滚动功能。
 
+## 在线预览
+
+🚀 [在线访问地址](https://community-discovery-iota.vercel.app/discover)
+
 ## 演示视频
 
-[查看功能演示视频](https://www.loom.com/share/781c13d386534ba69468ad1f344e9d0f)
+[查看功能演示视频](https://www.loom.com/share/3ecf5f5cfd3048baa45dfdcca048b9d6)
 
 ## 主要功能
 
@@ -73,6 +77,11 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## 部署
+
+项目已使用 Vercel 部署，可以通过以下链接访问：
+https://community-discovery-iota.vercel.app/discover
 
 ## 性能优化
 
